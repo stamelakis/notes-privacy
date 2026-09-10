@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notes — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #fbf7f0;
+      --panel: #ffffff;
+      --ink: #241d12;
+      --muted: #6b6152;
+      --rule: #eadfce;
+      --accent: #b45309;
+      --accent-soft: #fff2dc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14110c;
+        --panel: #1d1913;
+        --ink: #f0e9dd;
+        --muted: #a99e8c;
+        --rule: #322a1f;
+        --accent: #f5b942;
+        --accent-soft: #2a2113;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 22px 72px; }
+    header {
+      display: flex; align-items: center; gap: 14px;
+      padding-bottom: 22px; margin-bottom: 30px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .logo {
+      width: 46px; height: 46px; border-radius: 11px; flex: none;
+      background: linear-gradient(160deg, #f9b233, #e8930a);
+      position: relative;
+    }
+    .logo::before {
+      content: ""; position: absolute; inset: 12px 13px;
+      border-radius: 3px; background: #fff;
+    }
+    .logo::after {
+      content: ""; position: absolute; left: 18px; right: 18px; top: 18px; height: 3px;
+      background: #e8930a; border-radius: 2px;
+      box-shadow: 0 6px 0 #e8930a, 0 12px 0 #e8930a;
+    }
+    h1 { font-size: 1.5rem; margin: 0; letter-spacing: -0.01em; }
+    .sub { color: var(--muted); font-size: 0.85rem; margin-top: 3px; }
+    .lede { font-size: 1.08rem; }
+    h2 {
+      font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--accent); margin: 2.4em 0 0.5em;
+    }
+    p { margin: 0.5em 0; }
+    ul { margin: 0.5em 0; padding-left: 1.2em; }
+    li { margin: 0.3em 0; }
+    a { color: var(--accent); }
+    .card {
+      background: var(--panel); border: 1px solid var(--rule);
+      border-radius: 14px; padding: 4px 22px 18px; margin-top: 8px;
+    }
+    footer { margin-top: 40px; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Notes — Privacy Policy</h1>
+        <div class="sub">BrightIdeas Studio · Last updated 16 July 2026</div>
+      </div>
+    </header>
+
+    <p class="lede">Notes is a simple to‑do / notes app for Android, Wear OS and desktop. In short:
+      it stores only the notes you write, never asks for your identity, and shows no ads and no tracking.</p>
+
+    <div class="card">
+      <h2>What the app stores</h2>
+      <ul>
+        <li><strong>Your notes</strong> — the text of each note, whether it's checked off, and an optional
+            due date you set. That is the only content the app stores.</li>
+        <li>Notes are saved <strong>locally on your device</strong> so the app works offline.</li>
+      </ul>
+
+      <h2>Cloud sync</h2>
+      <p>So the same list appears on your phone, watch and computer, the app can copy your notes to a
+         private database hosted on <strong>Supabase</strong> (a cloud database provider) and read them
+         back. Your notes are stored under a random identifier built into the app — they are not linked
+         to your name, email, phone number or any account, and the app never asks you to sign in.</p>
+
+      <h2>What the app does not collect</h2>
+      <ul>
+        <li>No name, email address, phone number or contacts.</li>
+        <li>No location data.</li>
+        <li>No advertising identifiers, and no ads.</li>
+        <li>No analytics or usage tracking.</li>
+      </ul>
+
+      <h2>Sharing</h2>
+      <p>Your notes are not sold or shared with anyone. The only third party involved is the cloud
+         database provider (Supabase) that stores the synced copy so sync can work.</p>
+
+      <h2>Keeping and deleting your data</h2>
+      <p>Notes you create stay until you delete them. Deleting a note removes it from that device and,
+         on the next sync, from the cloud copy too. Uninstalling the app removes the notes stored on that
+         device. To request deletion of the synced copy, email the address below.</p>
+
+      <h2>Children</h2>
+      <p>Notes is a general‑audience productivity app and is not directed at children.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the updated version will be posted at this address with a new
+         “Last updated” date.</p>
+
+      <h2>Contact</h2>
+      <p>Questions or data‑deletion requests:
+         <a href="mailto:andrewstamelakis@gmail.com">andrewstamelakis@gmail.com</a></p>
+    </div>
+
+    <footer>© 2026 BrightIdeas Studio · Notes privacy policy</footer>
+  </div>
+</body>
+</html>
