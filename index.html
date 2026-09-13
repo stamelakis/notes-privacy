@@ -76,43 +76,78 @@
       <div class="logo" aria-hidden="true"></div>
       <div>
         <h1>Notes — Privacy Policy</h1>
-        <div class="sub">BrightIdeas Studio · Last updated 16 July 2026</div>
+        <div class="sub">BrightIdeas Studio · Last updated 13 September 2026</div>
       </div>
     </header>
 
-    <p class="lede">Notes is a simple to‑do / notes app for Android, Wear OS and desktop. In short:
-      it stores only the notes you write, never asks for your identity, and shows no ads and no tracking.</p>
+    <p class="lede">Notes is a to‑do, lists and notes app for Android, Wear OS and desktop.
+      In short: you sign in with an email address so your notes follow you between your own
+      devices, only you can read them, and there are no ads and no tracking.</p>
 
     <div class="card">
+      <h2>Your account</h2>
+      <p>To use the app you create an account with an <strong>email address</strong>, a
+         <strong>password</strong> and a <strong>username</strong>. The email address is how you
+         sign in and how a forgotten password is reset. The username is how other people can
+         share a list with you — it is the only thing about you that anyone else can see, and
+         nobody is ever shown your email address.</p>
+      <p>Accounts are handled by <strong>Supabase</strong>, the cloud provider that hosts the
+         database. Your password is stored only as a cryptographic hash; nobody, including us,
+         can read it.</p>
+
       <h2>What the app stores</h2>
       <ul>
-        <li><strong>Your notes</strong> — the text of each note, whether it's checked off, and an optional
-            due date you set. That is the only content the app stores.</li>
-        <li>Notes are saved <strong>locally on your device</strong> so the app works offline.</li>
+        <li><strong>Your notes and lists</strong> — to‑dos, shopping lists, project notes,
+            routines, birthdays and namedays, films, and free‑form notes, along with whatever
+            you mark as done and any dates or reminder times you set.</li>
+        <li><strong>Your account details</strong> — email address, username, and which
+            language you chose for the app.</li>
+        <li>Everything is also saved <strong>on your device</strong>, so the app works offline.</li>
       </ul>
 
-      <h2>Cloud sync</h2>
-      <p>So the same list appears on your phone, watch and computer, the app can copy your notes to a
-         private database hosted on <strong>Supabase</strong> (a cloud database provider) and read them
-         back. Your notes are stored under a random identifier built into the app — they are not linked
-         to your name, email, phone number or any account, and the app never asks you to sign in.</p>
+      <h2>Who can read your notes</h2>
+      <p>Your notes are stored against your account, and the database itself enforces that only
+         your account can reach them. Signing in is required to see anything at all. Somebody
+         else creating an account of their own sees their own empty lists, never yours.</p>
+      <p>The <strong>vault</strong> is stronger still: it is encrypted on your device with a
+         passphrase only you know, before it is stored or synced. Nobody can read it without that
+         passphrase — not us, and not the cloud provider. If you forget both the passphrase and
+         the one‑time recovery code shown when you created it, its contents cannot be recovered
+         by anyone.</p>
+
+      <h2>Sharing a list with someone</h2>
+      <p>You can choose to share one of your lists with another person by typing their username.
+         Only then can they read and edit that one list, and only that list. You can stop sharing
+         at any time, and they can hand it back at any time. Nothing is shared unless you ask for
+         it, and the vault can never be shared.</p>
+
+      <h2>Looking up a film</h2>
+      <p>On the Movies list, what you type in the search box is sent to
+         <strong>Wikipedia</strong> so the app can offer matching films and show the year and
+         director. That happens only while you are typing on that screen. Nothing else is sent —
+         not your account, not your name, and none of your other lists.</p>
 
       <h2>What the app does not collect</h2>
       <ul>
-        <li>No name, email address, phone number or contacts.</li>
+        <li>No phone number, no contacts, no photos.</li>
         <li>No location data.</li>
         <li>No advertising identifiers, and no ads.</li>
         <li>No analytics or usage tracking.</li>
       </ul>
 
-      <h2>Sharing</h2>
-      <p>Your notes are not sold or shared with anyone. The only third party involved is the cloud
-         database provider (Supabase) that stores the synced copy so sync can work.</p>
+      <h2>Who else is involved</h2>
+      <p>Your notes are never sold, and never shared with anyone except the people you choose to
+         share a list with. The only companies involved are <strong>Supabase</strong>, which hosts
+         the database and the sign‑in system, and <strong>Wikipedia</strong>, which answers film
+         searches as described above.</p>
 
       <h2>Keeping and deleting your data</h2>
-      <p>Notes you create stay until you delete them. Deleting a note removes it from that device and,
-         on the next sync, from the cloud copy too. Uninstalling the app removes the notes stored on that
-         device. To request deletion of the synced copy, email the address below.</p>
+      <p>Notes stay until you delete them. Deleting one removes it from that device and, on the
+         next sync, from the stored copy too.</p>
+      <p>You can <strong>delete your entire account from inside the app</strong> — Account →
+         Delete account. That removes your notes, your lists, your vault and the account itself.
+         It cannot be undone and there is no copy kept to restore from. You can also email the
+         address below to ask for the same thing.</p>
 
       <h2>Children</h2>
       <p>Notes is a general‑audience productivity app and is not directed at children.</p>
